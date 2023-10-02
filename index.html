@@ -7,6 +7,11 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="icon"
+      href="./assets/android-chrome-192x192.png"
+      type="image/png"
+    />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -14,8 +19,8 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -23,16 +28,20 @@
     <nav id="hamburger-nav">
       <!-- <div class="logo">Lavinia Ținca</div> -->
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="hamburger-icon-wrapper" onclick="toggleMenu()">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <ul>
+              <li><a href="#about" onclick="toggleMenu()">About</a></li>
+              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
@@ -214,7 +223,7 @@
             alt="Experience icon"
             class="icon"
           />
-          Front-end Development
+          Frontend Development
         </h2>
 
         <div class="grid-container">
@@ -269,7 +278,7 @@
             alt="Experience icon"
             class="icon"
           />
-          Back-end Development
+          Backend Development
         </h2>
         <div class="grid-container">
           <article>
@@ -336,9 +345,7 @@
             class="icon contact-icon email-icon"
           />
           <p>
-            <a href="mailto:laviniaanamariatinca@gmail.com"
-              >laviniaanamariatinca@gmail.com</a
-            >
+            <a href="mailto:laviniaanamariatinca@gmail.com">Send email</a>
           </p>
         </div>
         <div class="contact-info-container">
@@ -358,8 +365,8 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
